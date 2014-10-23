@@ -542,7 +542,7 @@
                       <i>
                         <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
                       </i>. 
-            Get the number of recently added messages.
+            Get the number of recently added messages in the folder.
             </td>
                   </tr>
                   <tr valign="top">
@@ -11457,8 +11457,10 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MailFolder.Count:Value">The total number of messages.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MailFolder.Count:Remarks">
-            Gets the total number of messages in the folder.
-            </div>
+                <p>Gets the total number of messages in the folder.</p>
+                <p>Note: This value will only be set after calling <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken)">MailFolder.Status(StatusItems, System.Threading.CancellationToken)</a>
+            with <a href="../MailKit/StatusItems.html#F:MailKit.StatusItems.Count">StatusItems.Count</a> or by opening the folder.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailFolder.Count:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
@@ -20280,7 +20282,7 @@
             <h3 id="P:MailKit.MailFolder.Recent">Recent Property</h3>
             <blockquote id="P:MailKit.MailFolder.Recent:member">
               <div class="msummary">
-            Get the number of recently added messages.
+            Get the number of recently added messages in the folder.
             </div>
               <h2>Syntax</h2>
               <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Recent</b>  { get; protected set; }</div>
@@ -20288,8 +20290,10 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MailFolder.Recent:Value">The number of recently added messages.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MailFolder.Recent:Remarks">
-            Gets the number of recently added messages.
-            </div>
+                <p>Gets the number of recently delivered messages in the folder.</p>
+                <p>Note: This value will only be set after calling <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken)">MailFolder.Status(StatusItems, System.Threading.CancellationToken)</a>
+            with <a href="../MailKit/StatusItems.html#F:MailKit.StatusItems.Recent">StatusItems.Recent</a> or by opening the folder.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailFolder.Recent:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
@@ -31727,9 +31731,10 @@
               <blockquote class="SubsectionBox" id="P:MailKit.MailFolder.Unread:Value">The number of unread messages.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.MailFolder.Unread:Remarks">
-            This value will only be set after calling <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken)">MailFolder.Status(StatusItems, System.Threading.CancellationToken)</a>
-            with <a href="../MailKit/StatusItems.html#F:MailKit.StatusItems.Unread">StatusItems.Unread</a>.
-            </div>
+                <p>Gets the number of unread messages in the folder.</p>
+                <p>Note: This value will only be set after calling <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Status(MailKit.StatusItems,System.Threading.CancellationToken)">MailFolder.Status(StatusItems, System.Threading.CancellationToken)</a>
+            with <a href="../MailKit/StatusItems.html#F:MailKit.StatusItems.Unread">StatusItems.Unread</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.MailFolder.Unread:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
