@@ -2116,6 +2116,14 @@
             The server responded with an unexpected token.
             </td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The IMAP server does not support the IDLE extension.
+            </td>
+                  </tr>
                 </table>
               </blockquote>
               <h2 class="Section">Remarks</h2>
@@ -2129,6 +2137,9 @@
             opening a folder using
             <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,System.Threading.CancellationToken)">MailKit.MailFolder.Open(MailKit.FolderAccess, System.Threading.CancellationToken)</a>
             or any of the other variants.</p>
+                <p>Note: It is especially important to cancel the <i>doneToken</i> before
+            cancelling the <i>cancellationToken</i> when using SSL or TLS due to the
+            fact that <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.Security.SslStream">System.Net.Security.SslStream</a> cannot be polled.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.Idle(System.Threading.CancellationToken,System.Threading.CancellationToken):Version Information">
@@ -2224,6 +2235,14 @@
             The server responded with an unexpected token.
             </td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>
+                    </td>
+                    <td>
+            The IMAP server does not support the IDLE extension.
+            </td>
+                  </tr>
                 </table>
               </blockquote>
               <h2 class="Section">Remarks</h2>
@@ -2237,6 +2256,9 @@
             opening a folder using
             <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,System.Threading.CancellationToken)">MailKit.MailFolder.Open(MailKit.FolderAccess, System.Threading.CancellationToken)</a>
             or any of the other variants.</p>
+                <p>Note: It is especially important to cancel the <i>doneToken</i> before
+            cancelling the <i>cancellationToken</i> when using SSL or TLS due to the
+            fact that <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.Security.SslStream">System.Net.Security.SslStream</a> cannot be polled.</p>
               </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="M:MailKit.Net.Imap.ImapClient.IdleAsync(System.Threading.CancellationToken,System.Threading.CancellationToken):Version Information">
