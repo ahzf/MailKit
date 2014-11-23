@@ -1307,7 +1307,8 @@
                 <p>It should be noted that when using a clear-text SMTP connection,
             if the server advertizes support for the STARTTLS extension, the client
             will automatically switch into TLS mode before authenticating unless the
-            <i>uri</i> contains a query string to disable it.</p>
+            <i>uri</i> contains a query string ("?starttls=false") to
+            disable it.</p>
             If a successful connection is made, the <a href="../MailKit.Net.Smtp/SmtpClient.html#P:MailKit.Net.Smtp.SmtpClient.AuthenticationMechanisms">SmtpClient.AuthenticationMechanisms</a>
             and <a href="../MailKit.Net.Smtp/SmtpClient.html#P:MailKit.Net.Smtp.SmtpClient.Capabilities">SmtpClient.Capabilities</a> properties will be populated.
             </div>

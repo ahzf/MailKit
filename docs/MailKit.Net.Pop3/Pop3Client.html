@@ -2133,7 +2133,8 @@
                 <p>It should be noted that when using a clear-text POP3 connection,
             if the server advertizes support for the STLS extension, the client
             will automatically switch into TLS mode before authenticating unless
-            the <i>uri</i> contains a query string to disable it.</p>
+            the <i>uri</i> contains a query string ("?starttls=false")
+            to disable it.</p>
             If a successful connection is made, the <a href="../MailKit.Net.Pop3/Pop3Client.html#P:MailKit.Net.Pop3.Pop3Client.AuthenticationMechanisms">Pop3Client.AuthenticationMechanisms</a>
             and <a href="../MailKit.Net.Pop3/Pop3Client.html#P:MailKit.Net.Pop3.Pop3Client.Capabilities">Pop3Client.Capabilities</a> properties will be populated.
             </div>
