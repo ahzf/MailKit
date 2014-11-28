@@ -2139,6 +2139,8 @@
             opening a folder using
             <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,System.Threading.CancellationToken)">MailKit.MailFolder.Open(MailKit.FolderAccess, System.Threading.CancellationToken)</a>
             or any of the other variants.</p>
+                <p>While the IDLE command is running, no other commands may be issued until the
+            <i>doneToken</i> is cancelled.</p>
                 <p>Note: It is especially important to cancel the <i>doneToken</i> before
             cancelling the <i>cancellationToken</i> when using SSL or TLS due to the
             fact that <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.Security.SslStream">System.Net.Security.SslStream</a> cannot be polled.</p>
@@ -2258,6 +2260,8 @@
             opening a folder using
             <a href="../MailKit/MailFolder.html#M:MailKit.MailFolder.Open(MailKit.FolderAccess,System.Threading.CancellationToken)">MailKit.MailFolder.Open(MailKit.FolderAccess, System.Threading.CancellationToken)</a>
             or any of the other variants.</p>
+                <p>While the IDLE command is running, no other commands may be issued until the
+            <i>doneToken</i> is cancelled.</p>
                 <p>Note: It is especially important to cancel the <i>doneToken</i> before
             cancelling the <i>cancellationToken</i> when using SSL or TLS due to the
             fact that <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.Security.SslStream">System.Net.Security.SslStream</a> cannot be polled.</p>
