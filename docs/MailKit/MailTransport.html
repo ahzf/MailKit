@@ -671,6 +671,18 @@
             Raise the disconnected event.
              (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</blockquote></td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <b>
+                        <a href="#M:MailKit.MailTransport.OnMessageSent(MailKit.MessageSentEventArgs)">OnMessageSent</a>
+                      </b>(<a href="../MailKit/MessageSentEventArgs.html">MessageSentEventArgs</a>)<blockquote>
+            Raise the message sent event.
+            </blockquote></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -720,6 +732,20 @@
             Occurs when the client gets disconnected.
              (<i>Inherited from <a href="../MailKit/MailService.html">MailService</a>.</i>)</td>
                   </tr>
+                  <tr valign="top">
+                    <td>
+                      <div>
+                      </div>
+                    </td>
+                    <td>
+                      <b>
+                        <a href="#E:MailKit.MailTransport.MessageSent">MessageSent</a>
+                      </b>
+                    </td>
+                    <td>
+            Occurs when a message is successfully sent via the transport.
+            </td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -741,6 +767,47 @@
             </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="C:MailKit.MailTransport():Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="E:MailKit.MailTransport.MessageSent">MessageSent Event</h3>
+            <blockquote id="E:MailKit.MailTransport.MessageSent:member">
+              <div class="msummary">
+            Occurs when a message is successfully sent via the transport.
+            </div>
+              <h2>Syntax</h2>
+              <div class="Signature">public event <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.EventHandler`1">EventHandler&lt;MessageSentEventArgs&gt;</a> <b>MessageSent</b> </div>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="E:MailKit.MailTransport.MessageSent:Remarks">
+            The <a href="../MailKit/MailTransport.html#E:MailKit.MailTransport.MessageSent">MailTransport.MessageSent</a> event will be emitted each time a message is successfully sent.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="E:MailKit.MailTransport.MessageSent:Version Information">
+                <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+              <hr size="1" />
+            </blockquote>
+            <h3 id="M:MailKit.MailTransport.OnMessageSent(MailKit.MessageSentEventArgs)">OnMessageSent Method</h3>
+            <blockquote id="M:MailKit.MailTransport.OnMessageSent(MailKit.MessageSentEventArgs):member">
+              <div class="msummary">
+            Raise the message sent event.
+            </div>
+              <h2>Syntax</h2>
+              <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>OnMessageSent</b> (<a href="../MailKit/MessageSentEventArgs.html">MessageSentEventArgs</a> e)</div>
+              <h4 class="Subsection">Parameters</h4>
+              <blockquote class="SubsectionBox" id="M:MailKit.MailTransport.OnMessageSent(MailKit.MessageSentEventArgs):Parameters">
+                <dl>
+                  <dt>
+                    <i>e</i>
+                  </dt>
+                  <dd>The message sent event args.</dd>
+                </dl>
+              </blockquote>
+              <h2 class="Section">Remarks</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.OnMessageSent(MailKit.MessageSentEventArgs):Remarks">
+            Raises the message sent event.
+            </div>
+              <h2 class="Section">Requirements</h2>
+              <div class="SectionBox" id="M:MailKit.MailTransport.OnMessageSent(MailKit.MessageSentEventArgs):Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
               <hr size="1" />
             </blockquote>
