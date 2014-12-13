@@ -537,8 +537,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentDisposition:Value">The content disposition.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentDisposition:Remarks">
-            Gets the Content-Disposition of the body part, if available.
-            </div>
+                <p>Gets the Content-Disposition of the body part, if available.</p>
+                <p>The Content-Disposition value is only retrieved if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.BodyStructure">MessageSummaryItems.BodyStructure</a> flag is used when fetching
+            summary information from an <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentDisposition:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
@@ -573,8 +576,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentLanguage:Value">The content language.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLanguage:Remarks">
-            Gets the Content-Language of the body part, if available.
-            </div>
+                <p>Gets the Content-Language of the body part, if available.</p>
+                <p>The Content-Language value is only retrieved if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.BodyStructure">MessageSummaryItems.BodyStructure</a> flag is used when fetching
+            summary information from an <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLanguage:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
@@ -591,8 +597,11 @@
               <blockquote class="SubsectionBox" id="P:MailKit.BodyPartBasic.ContentLocation:Value">The content location.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLocation:Remarks">
-            Gets the Content-Location of the body part, if available.
-            </div>
+                <p>Gets the Content-Location of the body part, if available.</p>
+                <p>The Content-Location value is only retrieved if the
+            <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.BodyStructure">MessageSummaryItems.BodyStructure</a> flag is used when fetching
+            summary information from an <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.ContentLocation:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
@@ -671,8 +680,12 @@
                 <tt>true</tt> if thie part is an attachment; otherwise, <tt>false</tt>.</blockquote>
               <h2 class="Section">Remarks</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.IsAttachment:Remarks">
-            Determines whether or not the body part is an attachment.
-            </div>
+                <p>Determines whether or not the body part is an attachment based on the value of
+            the Content-Disposition.</p>
+                <p>Since the value of the Content-Disposition header is needed, it is necessary to
+            include the <a href="../MailKit/MessageSummaryItems.html#F:MailKit.MessageSummaryItems.BodyStructure">MessageSummaryItems.BodyStructure</a> flag when fetching
+            summary information from an <a href="../MailKit/IMailFolder.html">MailKit.IMailFolder</a>.</p>
+              </div>
               <h2 class="Section">Requirements</h2>
               <div class="SectionBox" id="P:MailKit.BodyPartBasic.IsAttachment:Version Information">
                 <b>Namespace: </b>MailKit<br /><b>Assembly: </b>MailKit (in MailKit.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
